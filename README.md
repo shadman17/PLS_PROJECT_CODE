@@ -1,6 +1,8 @@
 # PLS PROJECT CODE
 
-## Building Images
+## Image Resizer
+
+### Building Images
 
 The images are processed from a `Camera` directory that is not checked into the repo.
 This way, raw data is not exposed publicly. you can uplodad multiple photos in `Camera` directory.
