@@ -26,6 +26,7 @@ $ Measure-Command {npm run build:images}
 - install node js https://nodejs.org/en/download/ if you don't have any
 
 ```bash
+# build node_modules
 $ npm install
 or
 $ npm install create-node-module
@@ -47,6 +48,7 @@ $ node hashing-parallel.js
 - install node js https://nodejs.org/en/download/ if you don't have any
 
 ```bash
+# build node_modules
 $ npm install
 or
 $ npm install create-node-module
