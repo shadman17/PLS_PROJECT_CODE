@@ -1,0 +1,44 @@
+{
+  "name": "gallery",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Joel Thoms",
+  "license": "MIT",
+  "keywords": [],
+  "scripts": {
+    "clean": "rimraf dist/",
+    "prebuild": "npm run clean",
+    "build": "babel --verbose src/ -d dist/",
+    "build:html": "babel-node src/build-html.js",
+    "build:images": "babel-node src/build-image.js",
+    "start": "npx serve public",
+    "watch": "npx nodemon --watch src --exec \"npm run build:html\"",
+    "dev": "concurrently -n serve,build -c green,cyan \"npm start\" \"npm run watch\"",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.1",
+    "glob": "^7.1.6",
+    "js-yaml": "^3.14.0",
+    "mkdirp": "^1.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "sharp": "^0.25.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/node": "^7.10.3",
+    "@babel/plugin-transform-regenerator": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "babel-eslint": "^10.1.0",
+    "concurrently": "^5.2.0",
+    "eslint": "^7.3.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.0",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2"
+  }
+}
