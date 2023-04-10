@@ -45,6 +45,8 @@ $ node hashing-parallel.js
 
 ## Matrix Multiplication 
 
+### How to run
+
 - install node js https://nodejs.org/en/download/ if you don't have any
 
 ```bash
